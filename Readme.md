@@ -10,7 +10,7 @@ API available at ```https://hacktivity.fr/```
 #### /statistics 
 example 
 ```js
-URL : https://hacktivity.fr/staistics
+GET https://hacktivity.fr/staistics
 Content-Type : application/json
 -------------------------------------
 {
@@ -23,7 +23,7 @@ Content-Type : application/json
 #### /availability 
 example 
 ```js
-URL : https://hacktivity.fr/availability
+GET https://hacktivity.fr/availability
 Content-Type : application/json
 -------------------------------------
 {
@@ -38,13 +38,13 @@ Content-Type : application/json
 #### /statistics/:host/:begin/:end 
 example 
 ```js
-URL : https://hacktivity.fr/statistics/8.8.8.8/2020-06-05T14:40:20Z/2020-06-06T03:40:20Z
+GET https://hacktivity.fr/statistics/8.8.8.8/2020-06-05T14:40:20Z/2020-06-06T03:40:20Z
 ```
 
 #### /availability/:host/:begin/:end 
 example 
 ```js
-URL : https://hacktivity.fr/availability/8.8.8.8/2020-06-05T14:40:20Z/2020-06-06T03:40:20Z
+GET https://hacktivity.fr/availability/8.8.8.8/2020-06-05T14:40:20Z/2020-06-06T03:40:20Z
 ```
 
 ## format
