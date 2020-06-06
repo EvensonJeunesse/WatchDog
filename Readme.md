@@ -7,9 +7,9 @@ API available at ```https://hacktivity.fr/```
 
 ### JSON mode 
 
-#### /statistics (json)
+#### /statistics 
 example 
-```http
+```js
 URL : https://hacktivity.fr/staistics
 Content-Type : application/json
 -------------------------------------
@@ -22,7 +22,7 @@ Content-Type : application/json
 
 #### /availability 
 example 
-```
+```js
 URL : https://hacktivity.fr/availability
 Content-Type : application/json
 -------------------------------------
@@ -35,15 +35,15 @@ Content-Type : application/json
 
 ### Full URL mode 
 
-#### /statistics/:host/:period_begin/:period_end ( full url mode )
+#### /statistics/:host/:period_begin/:period_end 
 example 
-```
+```js
 URL : https://hacktivity.fr/statistics/8.8.8.8/2020-06-05T14:40:20Z/2020-06-06T03:40:20Z
 ```
 
-#### /availability/:host/:period_begin/:period_end ( full url mode )
+#### /availability/:host/:period_begin/:period_end 
 example 
-```
+```js
 URL : https://hacktivity.fr/availability/8.8.8.8/2020-06-05T14:40:20Z/2020-06-06T03:40:20Z
 ```
 
