@@ -55,7 +55,7 @@ async function availability(host,period_begin,period_end){
         AND time >= ${Influx.escape.stringLit(period_begin)}
         AND time <= ${Influx.escape.stringLit(period_end)}
       `);
-    if(result) return {
+    if(result[0]) return {
       "tsf" : result[0].tsf
     };
   }catch(e){

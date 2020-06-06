@@ -12,7 +12,7 @@ async function statistics(data,res){
 
     db.statistics(host,period_begin,period_end).then(result => {
     if(result) res.status(202).json(result);
-    else res.status(204).json({info : "no information available"});
+    else res.status(204).json();
     })
     .catch(err => { res.status(500).send(/*err.stack*/)});
   }
@@ -29,7 +29,7 @@ async function availability(data,res){
 
     db.availability(host,period_begin,period_end).then(result => {
     if(result) res.status(202).json(result);
-    else res.status(204).json({info : "no information available"});
+    else res.status(204).json();
     })
     .catch(err => {res.status(500).send(/*err.stack*/)});
 }
