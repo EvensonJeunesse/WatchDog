@@ -1,9 +1,6 @@
 # Watchdog API
 
-A ping request is sent each 3 second to this list of ips : 
-- 8.8.8.8
-- 163.172.250.12
-- 104.26.13.60
+A ping request is sent each 3 second to a list of ips
 
 ## TRY IT
 API available at ```https://hacktivity.fr/```
