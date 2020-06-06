@@ -6,9 +6,9 @@ WORKDIR /home/node/watchdog
 
 USER node
 
-COPY --chown=node:node . .
+COPY --chown=node:node ./package.json .
 
-RUN npm install
+RUN npm install -g
 RUN export NODE_ENV=production
 
 EXPOSE 8080
