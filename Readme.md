@@ -8,7 +8,7 @@ API available at ```https://hacktivity.fr/```
 ### JSON mode 
 
 #### /statistics 
-example 
+- request
 ```js
 GET https://hacktivity.fr/staistics
 Content-Type : application/json
@@ -19,9 +19,19 @@ Content-Type : application/json
 	"end": "2020-06-06T03:40:20Z"
 }
 ```
+- response 
+```js
+{
+  "host": "8.8.8.8",
+  "ping_requests": 5505,
+  "average_response_time": "21.29",
+  "average_ttl": 49.531516802906445
+}
+```
+
 
 #### /availability 
-example 
+- request  
 ```js
 GET https://hacktivity.fr/availability
 Content-Type : application/json
@@ -32,8 +42,14 @@ Content-Type : application/json
 	"end": "2020-06-06T03:40:20Z"
 }
 ```
+- response
+```js
+{
+  "tsf": 98.33815028901735
+}
+```
 
-### Full URL mode 
+### Equivalent in full URL mode 
 
 #### /statistics/:host/:begin/:end 
 example 
