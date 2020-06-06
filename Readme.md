@@ -49,6 +49,7 @@ URL : https://hacktivity.fr/availability/8.8.8.8/2020-06-05T14:40:20Z/2020-06-06
 
 ## format
 ```host``` : IPv4, IPv6 
+
 ```begin```,```end``` : ISO 8601 ( UTC ISO datetime )
 
 
