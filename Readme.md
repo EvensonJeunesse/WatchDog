@@ -35,7 +35,7 @@ Content-Type : application/json
 
 ### Full URL mode 
 
-#### /statistics/:host/:period_begin/:period_end 
+#### /statistics/:host/:begin/:period_end 
 example 
 ```js
 URL : https://hacktivity.fr/statistics/8.8.8.8/2020-06-05T14:40:20Z/2020-06-06T03:40:20Z
@@ -47,8 +47,9 @@ example
 URL : https://hacktivity.fr/availability/8.8.8.8/2020-06-05T14:40:20Z/2020-06-06T03:40:20Z
 ```
 
-## format 
-
+## format
+```host``` : IPv4, IPv6 
+```begin```,```end``` : ISO 8601 ( UTC ISO datetime )
 
 
 ## Node js security issues : 
