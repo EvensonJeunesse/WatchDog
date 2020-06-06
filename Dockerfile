@@ -9,6 +9,7 @@ USER node
 COPY --chown=node:node . .
 
 RUN npm install
+RUN export NODE_ENV=production
 
 EXPOSE 8080
 

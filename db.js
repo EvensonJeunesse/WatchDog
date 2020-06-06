@@ -47,14 +47,17 @@ function insertDb(host, alive, response_time, ttl){
 
 async function availability(host,period_begin,period_end){
   try{
-    return await influx.query(`
+    let result =  await influx.query(`
         SELECT 
-        SUM(alive)/COUNT(alive)*100 as TSF
+        SUM(alive)/COUNT(alive)*100 as tsf
         FROM ping
         WHERE host = ${Influx.escape.stringLit(host)}
         AND time >= ${Influx.escape.stringLit(period_begin)}
         AND time <= ${Influx.escape.stringLit(period_end)}
       `);
+    if(result) return {
+      "tsf" : result[0].tsf
+    };
   }catch(e){
     console.error(e)
   }
