@@ -7,7 +7,7 @@ async function statistics(data,res){
     const host = check.host(data.host);
     const period_begin = check.timestamp(data.start);
     const period_end = check.timestamp(data.end);
-  
+    check.inferior_dt(period_begin,period_end);
     if(!check.valid) return res.status(406).json({errors : check.errors});
 
     db.statistics(host,period_begin,period_end).then(result => {
@@ -24,7 +24,7 @@ async function availability(data,res){
     const host = check.host(data.host);
     const period_begin = check.timestamp(data.start);
     const period_end = check.timestamp(data.end);
-
+    check.inferior_dt(period_begin,period_end);
     if(!check.valid) return res.status(406).json({errors : check.errors});
 
     db.availability(host,period_begin,period_end).then(result => {

@@ -19,6 +19,16 @@ class Checker{
         this.errors.push({"error" : "Wrong timestamp format : "+escapeHtml(t)});
     }
     
+    inferior_dt(t1,t2){
+	let date1 = new Date(t1);
+	let date2 = new Date(t2);
+	
+        if (date1.getTime() && date2.getTime() && date1 <= date2) return true;
+	this.valid = false;
+        this.errors.push({"error" : "begin datetime must be inferior or equal to end datetime  "});
+    	return false;
+    }
+    
     host(ip){
         if(net.isIP(ip)){
             if(authorizedIp(ip)) return ip;
