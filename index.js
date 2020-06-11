@@ -8,7 +8,7 @@ const watchdog = require('./watchdog');
 const controller = require('./controller');
 const bodyParser = require('body-parser');
 // hosts might come from external APIs, do not trust these entries
-const hosts = ['8.8.8.8', '163.172.250.12', '104.26.13.60'];
+const hosts = ['8.8.8.8'];
 
 
 db.init().then(console.log("Database initialized"));
