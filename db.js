@@ -2,7 +2,7 @@ const Influx = require('influx');
 const db_host = "influxdb"
 const db_port = 8086;
 const db_user = "telegraf";
-const db_password = "secretpassword";
+const db_password = "";
 const db_name = "db0"
 const influx = new Influx.InfluxDB("http://"+db_user+":"+db_password+"@"+db_host+":"+db_port+"/"+db_name);
 
