@@ -2,8 +2,6 @@
 
 A ping request is sent each 3 second to a list of ips
 
-## TRY IT
-API available at ```https://hacktivity.fr/```
 
 ## USAGE 
 
