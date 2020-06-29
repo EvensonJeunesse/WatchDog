@@ -10,7 +10,7 @@ A ping request is sent each 3 second to a list of ips
 #### /statistics 
 - request
 ```js
-GET https://localhost/staistics
+GET https://localhost/statistics
 Content-Type : application/json
 -------------------------------------
 {
